@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: #ecf8fc;
+  font-size: 62.5%;
+  background-color: #337d96;
+}
+
+body {
+  margin: 0;
+}
+
+header h1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 6em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body > header {
+  background: #f0654b;
+  margin: 0;
+  padding: 1em;
+  padding-bottom: 2ex;
+  color: white;
+  text-align: center;
+
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 60% 100%, 0 50%);
+}
+
+main article:first-of-type {
+  background-color: inherit;
+  border-radius: 0px;
+  border: none;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+main article h2 {
+  font-size: 3em;
+}
+
+main article h3 {
+  font-size: 2.5em;
+}
+
+main header p,
+main header p::first-letter {
+  font-size: 1.25em;
+}
+
+main header p strong {
+  border: #ecf8fc solid 0.5px;
+  font-size: 1.1em;
+  font-weight: normal;
+  padding: 0.1em;
+}
+
+main header p time {
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+main article p {
+  font-size: 1.25em;
+}
+
+p::first-letter {
+  font-size: 2.5em;
+}
+
+main aside {
+  grid-column: 4;
+  grid-row: 1;
+  width: 20vw;
+}
+
+main aside p {
+  font-size: 1.4em;
+}
+
+main {
+  display: grid;
+  padding-bottom: 50px;
+}
+
+main article,
+main aside {
+  padding: 1em;
+}
+
+main aside section {
+  background-color: #ffdc88;
+  color: black;
+  padding: 2em;
+  border-radius: 15px;
+  border: #ffecbd solid;
+}
+
+aside h2 {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f0c04b;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100vw;
+}
+
+footer address {
+  font-size: 1.5em;
+  color: black;
+  font-style: normal;
+  padding-right: 20px;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-align: right;
+}
+
+main article {
+  background-color: #6aabc1;
+  border-radius: 15px;
+  border: #add8e6 solid;
+  margin: 15px;
+}
