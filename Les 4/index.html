@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title> Les 4 - oefening 1</title>
+  </head>
+<body>
+	<h1>Web en mobile event</h1>
+	<p>Schrijven je nu in voor het gloednieuwe web en mobile event dat binnenkort plaats vindt!</p>
+	<h2>Inschrijfformulier</h2>
+	<!--GET EN POST zijn de 2 opties om info te verzenden Of je kan een mail sturen via "mailto:"-->
+	<form action="form" method="POST" autocomplete>
+		<label for="Voornaam">Voornaam:</label><input type="text" name="Voornaam"><br>
+		<label for="Familienaam">Familienaam:</label><input type="text" name="Familienaam"><br>
+		<label for="email">E-mail:</label><input type="email" name="email"><br>
+		<label for="Geboortedatum">Geboortedatum:</label><input type="date" name="Geboortedatum"><br>
+		<label>Telefoon:</label><input type="text" name=""><br>
+		<!--start maken radiobuttons-->
+		<label>Geslacht:</label>
+		<input type="radio" id="male" name="Geslacht" value="man">
+  		<label for="Man">Man</label>
+  		<input type="radio" id="female" name="Geslacht" value="man">
+  		<label for="Vrouw">Vrouw</label><br>
+		<!--eind-->
+		<!--start aanmaken select voor keuzemenu -->
+		<label>Voormiddag sessie</label>
+		<select name="Ochtendsessie" id="Ochtendsessie" required="">
+			<option value="">Selecteer een item</option>
+			<option value="09u00">09u00</option>
+			<option value="10u00">10u00</option>
+			<option value="11u00">11u00</option>
+		</select><br>
+		<!--eind-->
+		<input type="checkbox" name="eten"><label>Ik blijf 's middags eten:</label><br>
+		<label>Namiddag sessie</label>
+		<select name="Namiddagsessie" id="Namiddagsessie" required="">
+			<option value="">Selecteer een item</option>
+			<option value="13u00">13u00</option>
+			<option value="14u00">14u00</option>
+			<option value="15u00">15u00</option>
+		</select><br>
+		<label>Ik wens dit nog mee te geven:</label><textarea name=""></textarea>><br>
+		<button>verzenden</button>
+	</form>
+	
+
+</body>
+</html>
