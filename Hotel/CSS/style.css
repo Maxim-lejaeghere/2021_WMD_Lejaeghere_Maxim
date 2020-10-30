@@ -1,0 +1,36 @@
+@media (min-width: 992px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
+    }
+    img{
+        height: 8%;
+        width: 20%;
+    }
+    
+    ul{
+        position: absolute;
+        right: 1%;
+        width: 60%;
+        
+    
+    }
+    
+     li{
+         display: inline;
+         padding: 2%;
+         font-size: 1.3em;
+         margin-right: 1%;
+         margin-top: auto;
+         color:#FF533D;
+         
+        }
+    li:hover{
+        background-color: gray;
+    }
+    header {
+        display: flex;
+    }
+  
+
+}
