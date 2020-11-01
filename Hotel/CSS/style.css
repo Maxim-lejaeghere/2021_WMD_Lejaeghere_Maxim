@@ -33,7 +33,10 @@ footer{
 } 
 footer div span{
    
-    text-align: right
+    text-align: right;
+    margin: auto;
+    display: inline-block;
+    margin-right: 1%;
 }
 
 #companyDetails{
@@ -43,7 +46,7 @@ footer div span{
     display: flex;
     flex-direction: column;
     margin-top: 0.5%;
-    height: inherit;
+    text-align: right;
 }
 
 ul.navbar{
@@ -89,8 +92,13 @@ main{
       }
 
       #logoNavbar{
-        width: 44%;
-            
+        margin: auto;
+    display: inline-block;
+    width: 48vw;
+    height: 12vw;
+    min-width: 120px;
+    min-height: 30px;
+    margin-left: 0px;
     }
 
       .hamburgerMenu{
@@ -99,7 +107,6 @@ main{
         display: flex;
         flex-direction: column;
         margin-top: 3px;
-        
       }
     
 }
