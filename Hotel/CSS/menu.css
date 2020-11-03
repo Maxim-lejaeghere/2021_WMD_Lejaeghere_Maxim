@@ -1,0 +1,251 @@
+/* veel info gehaald uit video: https://www.youtube.com/watch?v=DZg6UfS5zYg */
+
+/*niet responisve styling*/
+header {
+    display: flex;
+}
+
+header img{
+    z-index: 2;
+    
+}
+
+.navbar li{
+    display: inline;
+    font-size: 1.1rem;
+    color: var(--primary-color-red);
+    align-self: center;
+    margin: auto;
+    padding: 2.5%;
+    box-sizing: border-box; 
+    transition: font-size 1s ease;
+} 
+
+ul.navbar{
+        position: absolute;
+        display: flex;
+        margin: 0%;
+}
+
+main{
+    min-height: 1200px;
+}
+
+div.dropdown{
+     float:right;
+}
+
+ footer{
+    background-color: var(--primary-color-dark);
+    display: flex;
+    color: var(--primary-color-white);
+    width: 100vw;
+}
+
+footer div span{
+   
+    text-align: right;
+    margin: auto;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+#companyDetails{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   
+}
+
+#logoNavbarFoot{
+    margin: auto;
+    display: inline-block;
+    }
+
+    /*hamburger box*/
+
+.menu-wrap{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: var(--primary-color-white);
+    overflow: visible;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background-color: var(--primary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*hamburger lines*/
+
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all  0.4s ease;
+}
+
+/* styles top en bottom line from hamburger*/
+
+.menu-wrap .hamburger >div:before, .menu-wrap .hamburger > div:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger > div:after{
+top: 10px;
+}
+
+/*toggler animate*/
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/*turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after{
+top: 0;
+transform: rotate(90deg);
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.menu{
+    margin-top: 80px;
+    
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    text-decoration: none;
+    color: var(--primary-color-dark);
+    
+}
+
+.menu-wrap .menu{
+   display: none;
+}
+
+#logoNavBarFoot{
+    margin: auto;
+    margin-left: 0;
+}
+/*styling groot toestel*/
+@media only screen and (min-width: 1024px){
+    header .menu-wrap{
+        display: none;
+    }
+
+    ul.navbar{
+        right: 4%;
+        width: 60%;
+        
+    }
+    header .menu-wrap{
+        display: none;
+    }
+
+    #logoNavbarHead{
+        height: 90px;
+    }
+
+    #logoNavbarFoot{
+        height: 70px;
+    }
+        
+        
+}
+/*styling middel toestel*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    footer{
+        height: 80px;
+    }
+   
+    ul.navbar{
+        right: 4%;
+        width: 60%;
+        
+    }
+
+   footer div span{
+       font-size: 1em;
+    }
+
+    header img{
+        width: 30vw;
+    }
+
+    header .menu-wrap{
+        display: none;
+    }
+
+    #logoNavbarFoot{
+        height: 60px;
+
+    }
+
+}
+
+/*styling klein toestel*/
+
+@media only screen and (max-width: 768px){
+    footer{
+        height: 60px;
+    }
+    
+    footer div span{
+        font-size: 1em;
+    }
+    .menu-wrap .toggler:checked ~ .menu{
+        display: flex;
+    }
+
+    header .navbar{
+        display: none;
+    }
+    #logoNavbarFoot{
+    height: 35px;
+    }
+
+    #logoNavbarHead{
+        width: 70vw;
+    }
+
+    #companyDetails{
+        font-size: 0.6em;
+    }
+}
