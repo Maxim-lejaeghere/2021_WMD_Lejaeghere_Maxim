@@ -1,0 +1,112 @@
+/*inspiratie thumbnail: https://www.thehotel-brussels.be/nl*/
+body{
+    background-image: url("../image/foto's startpagina/stock-photo-modern-lobby-interior-in-night-illumination-pattaya-thailand-69108385.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.buttons{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.buttons button{
+    
+    display: block;
+    width: 20vw;
+    height: 4vw;
+    margin: auto;
+}
+
+/*template voor responsive*/
+/*styling groot toestel*/
+@media only screen and (min-width: 1024px){
+
+    
+    h1{
+        font-size: 6em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+
+    span{
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+    .thumbnail{
+        width: 80vw;
+        height: 50vw;
+        margin: auto;
+    }
+    
+    #centerDivThumbnail{
+        margin-top: 20%;
+        margin-left: -10%;
+    }
+}
+
+/*styling middel toestel*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    h1{
+        font-size: 4em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+
+    span{
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+    .thumbnail{
+        width: 80vw;
+        height: 50vw;
+        margin: auto;
+    }
+    
+    #centerDivThumbnail{
+        margin-top: 20%;
+        margin-left: -10%;
+    }
+}
+
+/*styling klein toestel*/
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 4em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+
+    span{
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        color: var(--primary-color-white);
+        width: 100%;
+    }
+    .thumbnail{
+        width: 80vw;
+        height: 50vw;
+        margin: auto;
+    }
+    
+    #centerDivThumbnail{
+        margin-top: 20%;
+        margin-left: -10%;
+    }
+}
+
+
+
