@@ -5,106 +5,149 @@ body{
     background-size: cover; 
 }
 
+h1{
+    color: var(--primary-color-white);
+    width: 100%;
+}
+
+span{
+    display: block;
+    color: var(--primary-color-white);
+    width: 100%;
+}
+
+
+
 .buttons{
-    padding-top: 20px;
     width: 100%;
     margin: auto;
     display: flex;
+    height: 50%;
 }
 
 .buttons button{
     
     display: block;
-    width: 20vw;
-    height: 4vw;
     margin: auto;
+}
+
+#centerDivThumbnail{
+    
+    width: 100%;
+    height: 50%;
+}
+
+#buttonBookRoom{
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+}
+
+#buttonCheckWeather{
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
+}
+
+#buttonBookRoom:hover{
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
+    cursor: pointer;
+}
+
+#buttonCheckWeather:hover{
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+    cursor: pointer;
 }
 
 /*template voor responsive*/
 /*styling groot toestel*/
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1023px){
 
     
     h1{
         font-size: 6em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+        padding-left: 100px;
     }
 
     span{
-        display: block;
         font-size: 3em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+        padding-left: 50px;
     }
+    
+
     .thumbnail{
         width: 80vw;
         height: 50vw;
         margin: auto;
     }
-    
-    #centerDivThumbnail{
-        margin-top: 20%;
-        margin-left: -10%;
+
+    .buttons button{
+        width: 18vw;
+        height: 3vw;
+        font-size: 1.5em;
     }
+
+    #centerDivThumbnail{
+        padding-top: 18vh;
+    }
+
 }
 
 /*styling middel toestel*/
 @media only screen and (max-width: 1024px) and (min-width: 768px){
+
     h1{
         font-size: 4em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+        padding-left: 100px;
     }
 
     span{
-        display: block;
         font-size: 2em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+        padding-left: 50px;
     }
+
+    #centerDivThumbnail{
+        padding-top: 10vh;
+    }
+
     .thumbnail{
         width: 80vw;
         height: 50vw;
         margin: auto;
     }
-    
-    #centerDivThumbnail{
-        margin-top: 20%;
-        margin-left: -10%;
+
+    .buttons button{
+        width: 10vh;
+        height: 5vh;
     }
 }
 
 /*styling klein toestel*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     h1{
-        font-size: 4em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+        font-size: 3em;
+        padding-left: 15%;
     }
 
-    span{
-        display: block;
-        font-size: 2em;
-        text-align: center;
-        color: var(--primary-color-white);
-        width: 100%;
+    #centerDivThumbnail span{
+        font-size: 1.5em;
+        padding-left: 22%;
     }
-    .thumbnail{
-        width: 80vw;
-        height: 50vw;
-        margin: auto;
+
+    #centerDivThumbnail{
+        padding-top: 20vh;
     }
     
-    #centerDivThumbnail{
-        margin-top: 20%;
-        margin-left: -10%;
+    .thumbnail{
+        width: 90vw;
+        height: 70vh;
+        margin: auto;
+    }
+
+    .buttons button{
+        width: 30vw;
+        height: 8vw;
     }
 }
 

@@ -12,6 +12,7 @@
     --primary-color-red: #FF533D;
     --primary-color-red-transparent: rgba(255,83,61,0.8);
     --primary-color-white-transparent: rgba(245,245,245,0.8);
+    --primary-color-dark-transparent: rgba(15,22,40,0.8);
 }
 body{
     font-family: 'Roboto', sans-serif;
