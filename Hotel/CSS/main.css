@@ -1,9 +1,10 @@
 /*inspiratie thumbnail: https://www.thehotel-brussels.be/nl*/
 body{
     background-image: url("../image/foto's startpagina/stock-photo-modern-lobby-interior-in-night-illumination-pattaya-thailand-69108385.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: auto 100vh;
+    background-repeat: repeat-y;
 }
+
 
 h1{
     color: var(--primary-color-white);
@@ -59,10 +60,29 @@ span{
     cursor: pointer;
 }
 
+/*making the grid*/
+
+.card{
+    text-align: center;
+    background-color: var(--primary-color-red);
+    color: var(--primary-color-white);
+    margin: auto;
+    margin-bottom: 10px;
+ }
+ 
+ .displayGrid{
+     display: grid;
+     gap: 1rem;
+ }
+
 /*template voor responsive*/
 /*styling groot toestel*/
 @media only screen and (min-width: 1023px){
-
+   
+    body{
+        background-size: 100vw auto;
+        background-repeat: repeat-y;
+    }
     
     h1{
         font-size: 6em;
@@ -87,15 +107,25 @@ span{
         font-size: 1.5em;
     }
 
+    .displayGrid{
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    }
+
+    .card{
+        width: 25vw;
+        height: 25vw;
+     }
+
     #centerDivThumbnail{
         padding-top: 18vh;
     }
-
+    
+    
 }
 
 /*styling middel toestel*/
 @media only screen and (max-width: 1024px) and (min-width: 768px){
-
+    
     h1{
         font-size: 4em;
         padding-left: 100px;
@@ -120,11 +150,24 @@ span{
         width: 10vh;
         height: 5vh;
     }
+
+    .displayGrid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card{
+        min-width: 250px;
+        min-height: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+     }
 }
 
 /*styling klein toestel*/
 
 @media only screen and (max-width: 767px){
+    
+
     h1{
         font-size: 3em;
         padding-left: 15%;
@@ -149,6 +192,16 @@ span{
         width: 30vw;
         height: 8vw;
     }
+    .displayGrid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .card{
+        min-width: 250px;
+        min-height: 250px;
+        
+     }
+
+
 }
 
 
