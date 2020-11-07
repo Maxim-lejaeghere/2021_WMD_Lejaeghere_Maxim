@@ -163,6 +163,22 @@ transform: rotate(90deg);
    display: none;
 }
 
+.socialMedia{
+    height: 32px;
+    width: 200px;
+    margin: auto;
+    align-content: space-between;
+    display: flex;
+    
+}
+
+.fab{
+    color: var(--primary-color-white);
+    font-size: 2rem;
+    width: 32px;
+    margin: auto;
+}
+
 #logoNavBarFoot{
     margin: auto;
     margin-left: 0;

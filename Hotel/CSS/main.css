@@ -1,8 +1,9 @@
 /*inspiratie thumbnail: https://www.thehotel-brussels.be/nl*/
 body{
-    background-image: url("../image/foto's startpagina/stock-photo-modern-lobby-interior-in-night-illumination-pattaya-thailand-69108385.jpg");
-    background-size: auto 100vh;
-    background-repeat: repeat-y;
+    background-image: url("../image/foto's startpagina/hall-entrance-and-lounge-restaurant-with-stair.jpg");
+    background-repeat: no-repeat;
+    
+    background-color:var(--primary-color-white);
 }
 
 
@@ -13,7 +14,7 @@ h1{
 
 span{
     display: block;
-    color: var(--primary-color-white);
+    color: var(--primary-color-red);
     width: 100%;
 }
 
@@ -23,7 +24,7 @@ span{
     width: 100%;
     margin: auto;
     display: flex;
-    height: 50%;
+    height: 100%;
 }
 
 .buttons button{
@@ -32,40 +33,43 @@ span{
     margin: auto;
 }
 
-#centerDivThumbnail{
-    
-    width: 100%;
-    height: 50%;
+#buttonBookRoom{
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
 }
 
-#buttonBookRoom{
+#buttonCheckWeather{
+    
     background-color: var(--primary-color-white-transparent);
     color: var(--primary-color-dark);
 }
 
-#buttonCheckWeather{
-    background-color: var(--primary-color-dark-transparent);
-    color: var(--primary-color-white);
-}
-
 #buttonBookRoom:hover{
-    background-color: var(--primary-color-dark-transparent);
-    color: var(--primary-color-white);
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
     cursor: pointer;
 }
 
 #buttonCheckWeather:hover{
-    background-color: var(--primary-color-white-transparent);
-    color: var(--primary-color-dark);
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
     cursor: pointer;
+}
+
+/*Google maps*/
+#map {
+  height: 80%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
 /*making the grid*/
 
 .card{
     text-align: center;
-    background-color: var(--primary-color-red);
-    color: var(--primary-color-white);
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
     margin: auto;
     margin-bottom: 10px;
  }
@@ -75,14 +79,23 @@ span{
      gap: 1rem;
  }
 
+ .card h2{
+    height: 20%;
+    width: 100%;
+    color: var(--primary-color-dark-transparent);
+    background-color:var(--primary-color-white) ;
+    padding-top: 10px;
+ }
+
+ .imgCard{
+     width: 100%;
+     height: 80%;
+     overflow: hidden;
+ }
+
 /*template voor responsive*/
 /*styling groot toestel*/
-@media only screen and (min-width: 1023px){
-   
-    body{
-        background-size: 100vw auto;
-        background-repeat: repeat-y;
-    }
+@media only screen and (min-width: 1025px){
     
     h1{
         font-size: 6em;
@@ -97,14 +110,15 @@ span{
 
     .thumbnail{
         width: 80vw;
-        height: 50vw;
+        height: 35vw;
         margin: auto;
     }
 
     .buttons button{
-        width: 18vw;
-        height: 3vw;
-        font-size: 1.5em;
+        width: 30vw;
+        height: 8vw;
+        max-width: 300px;
+        max-height: 80px;
     }
 
     .displayGrid{
@@ -112,13 +126,12 @@ span{
     }
 
     .card{
+        min-width: 250px;
+        min-height: 250px;
         width: 25vw;
         height: 25vw;
      }
 
-    #centerDivThumbnail{
-        padding-top: 18vh;
-    }
     
     
 }
@@ -136,9 +149,6 @@ span{
         padding-left: 50px;
     }
 
-    #centerDivThumbnail{
-        padding-top: 10vh;
-    }
 
     .thumbnail{
         width: 80vw;
@@ -147,8 +157,10 @@ span{
     }
 
     .buttons button{
-        width: 10vh;
-        height: 5vh;
+        width: 30vh;
+        height: 8vh;
+        min-width: 100px;
+        min-height: 30px;
     }
 
     .displayGrid{
@@ -158,8 +170,8 @@ span{
     .card{
         min-width: 250px;
         min-height: 250px;
-        margin: auto;
-        margin-bottom: 20px;
+        width: 25vw;
+        height: 25vw;
      }
 }
 
@@ -172,15 +184,6 @@ span{
         font-size: 3em;
         padding-left: 15%;
     }
-
-    #centerDivThumbnail span{
-        font-size: 1.5em;
-        padding-left: 22%;
-    }
-
-    #centerDivThumbnail{
-        padding-top: 20vh;
-    }
     
     .thumbnail{
         width: 90vw;
@@ -191,6 +194,8 @@ span{
     .buttons button{
         width: 30vw;
         height: 8vw;
+        min-width: 120px;
+        min-height: 40px;
     }
     .displayGrid{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -198,7 +203,8 @@ span{
     .card{
         min-width: 250px;
         min-height: 250px;
-        
+        width: 25vw;
+        height: 25vw;
      }
 
 
