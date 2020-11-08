@@ -2,10 +2,8 @@
 body{
     background-image: url("../image/foto's startpagina/hall-entrance-and-lounge-restaurant-with-stair.jpg");
     background-repeat: no-repeat;
-    
     background-color:var(--primary-color-white);
 }
-
 
 h1{
     color: var(--primary-color-white);

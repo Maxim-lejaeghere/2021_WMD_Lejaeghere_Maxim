@@ -3,7 +3,7 @@
 /*niet responisve styling*/
 header {
     display: flex;
-    background-color: var(--primary-color-white-transparent);
+    background-color: var(--primary-color-white);
     
 }
 

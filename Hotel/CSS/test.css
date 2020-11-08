@@ -1,7 +1,19 @@
+main{
+    
+    display: flex;
+}
+
+body{
+    background-image: url(../image/imageRooms/room.jpg);
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+}
+
 #booking-side{
     
     left: 0;
-    padding: 2rem;
+    
+    background-color: var(--primary-color-white-transparent);
 }
 
 #overviewRooms{
@@ -9,22 +21,56 @@
     padding: 2rem;
 }
 
+span.fa{
+    font-size: 2rem;
+    float: right;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.form-control{
+    width: 80%;
+    height: 3rem;
+    
+}
+
+.stay button{
+    height: 3rem;
+    width: 80%;
+    margin-top: 2.5rem;
+}
+
+.stay div h4{
+    font-size:  1.2rem;
+    height: 2rem;
+    
+}
+
+.fastbooker{
+    background-color: var(--primary-color-white);
+    
+}
 
 /*styling groot toestel*/
 @media only screen and (min-width: 1025px){
     #booking-side{
         position: absolute;
-        top: 5rem;
-        height: 70%;
+        top: 8rem;
         width: 30vw;
+        width: 30vw;
+        padding: 3rem;
         
         }
 
         #overviewRooms{
             position: absolute;
             right: 0;
-            top: 15rem;
+            top: 8rem;
             width: 70vw;
+            }
+            .fastbooker{
+                background-color: var(--primary-color-white);
+                padding: 3rem;
             }
 }
 
@@ -32,15 +78,19 @@
 @media only screen and (max-width: 1024px) and (min-width: 768px){
     #booking-side{
         position: absolute;
-        top: 15rem;
-        height: 70%;
         width: 30vw;
-        padding-left: 2rem;
+        padding: 3rem;
+        
+        }
+
+        .fastbooker{
+            padding: 1.5rem;
         }
 
         #overviewRooms{
             position: absolute;
-            top: 15rem;
+            right: 0;
+            top: 8rem;
             width: 70vw;
             }
 }
@@ -48,12 +98,9 @@
 /*styling klein toestel*/
 
 @media only screen and (max-width: 767px){
-    
-
-    #overviewRooms{
-        
-        }
-
+    main{
+        display: inline-block;
+    }
     #booking-side{
         top: 5rem;
         height: 70%;
@@ -104,9 +151,9 @@
         margin-top: 0.3rem;
     }
 
-    .stay button{
-        height: 3rem;
-        width: 90%;
-        margin-top: 0.5rem;
+    .fastbooker{
+        background-color: var(--primary-color-white-transparent);
+        padding: 3rem;
     }
+    
 }
