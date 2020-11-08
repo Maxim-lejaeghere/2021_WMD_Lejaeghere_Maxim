@@ -2,8 +2,8 @@
   'use strict';
   let rooms;
   const roomTypesAvailible=[];
-  const beginDateInput = new Date('2020-12-05T13:00:00+00:00');
-  const endDateInput = new Date('2020-12-10T13:00:00+00:00');
+  const beginDateInput = new Date('2020-12-01T13:00:00+00:00');
+  const endDateInput = new Date('2020-12-31T13:00:00+00:00');
   function getData() {
     fetch('../JSON/rooms.json')
         .then((response) => {
@@ -21,18 +21,20 @@
             for (j = 0; j < rooms[i].bookedFrom.length; j++) {
               beginBooked = new Date(rooms[i].bookedFrom[j]);
               endBooked = new Date(rooms[i].bookedTo[j]);
-              if (beginDateInput > beginBooked && beginDateInput < endBooked) {
+              if (beginBooked < beginDateInput &&
+                 beginDateInput < endBooked) {
                 break;
-              }
-
-              if (endDateInput > endBooked && endDateInput < endBooked) {
+              } else if (beginBooked < endDateInput &&
+                endDateInput < endBooked) {
+                break;
+              } else if (beginDateInput < beginBooked &&
+                 endDateInput > endBooked) {
                 break;
               } else {
                 roomType = rooms[i].typeRoom;
 
                 if (roomTypesAvailible.includes(roomType)) {
                 } else {
-                  console.log('test');
                   roomTypesAvailible.push(roomType);
                 }
               }
