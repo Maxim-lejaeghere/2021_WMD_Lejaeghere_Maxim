@@ -1,34 +1,282 @@
-#slider{
-    width: 80vw;
-    height: 50vw;
-    margin: auto;
+main{
+    min-height: 100vh;
     margin-top: 30px;
-    margin-bottom: 30px;
+
 }
 
-.mySlides {
-    display:none;
-    height: 100%;
-    overflow: hidden;
+body{
+   
+    background-color: var(--primary-color-white);
+    background-size: cover, contain;
+    background-repeat: no-repeat;
 }
 
-/*template voor responsive*/
+h1{
+    color: var(--primary-color-dark);
+    font-size: 4rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2{
+    color: var(--primary-color-dark);
+    font-size: 2rem;
+    
+}
+
+span.fa{
+    font-size: 2rem;
+    float: right;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+}
+
+.roomTypes{
+    padding: 10px;
+    margin: 10px;
+}
+
+.roomPictures{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.roomPictures img{
+    background-color: var(--primary-color-red);
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+    
+}
+
+.roomPictures div {
+    background-color: var(--primary-color-red);
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+}
+
+.roomPictures div p {
+    color: var(--primary-color-white);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.roomPictures div button{
+    display: block;
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--primary-color-white);
+    margin: auto;
+    margin-top: 40px;
+    color: var(--primary-color-red);
+    text-align: center;
+}
+
+
+.roomDescription {
+    margin-bottom: 15px;
+    margin-top: 1rem;
+    
+}
+
+
+
+.form-control{
+    width: 80%;
+    height: 3rem;
+    
+}
+
+.stay button{
+    height: 3rem;
+    width: 80%;
+    margin-top: 2.5rem;
+}
+
+.stay div h4{
+    font-size:  1.2rem;
+    height: 2rem;
+    
+}
+
+.fastbooker{
+    background-color: var(--primary-color-red);
+    
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fas{
+    font-size: 2.7rem;
+    
+}
+.ava{
+    display: none;
+}
+.typeRoom{
+    
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.Price{
+    font-size: 1.6rem;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-times{
+    color: red;
+}
+
+
+#booking-side{
+    
+    left: 0;
+}
+
+#overviewRooms{
+    right: 0;
+    padding: 2rem;
+}
+
+#availableVital{
+    display: none;
+}
+
+#notAvailableVital{
+    display: none;
+}
+
+#availableDeluxe{
+    display: none;
+}
+
+#notAvailableDeluxe{
+    display: none;
+}
+
+#availableJunior{
+    display: none;
+}
+
+#notAvailableJunior{
+    display: none;
+}
+
+
+
 /*styling groot toestel*/
 @media only screen and (min-width: 1025px){
-   
-    
+    #booking-side{
+        
+        width: 30vw;
+        width: 30vw;
+        padding: 3rem;
+        
+        }
+
+        #overviewRooms{
+            
+            right: 0;
+            top: 8rem;
+            width: 70vw;
+            }
+            .fastbooker{
+                padding: 3rem;
+            }
 }
 
 /*styling middel toestel*/
-@media only screen and (max-width: 1024px) and (min-width: 768px){ 
-    
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    #booking-side{
+        width: 30vw;
+        padding: 3rem;
+        
+        }
+
+        .fastbooker{
+            padding: 1.5rem;
+        }
+
+        #overviewRooms{
+            right: 0;
+            top: 8rem;
+            width: 70vw;
+            }
 }
 
 /*styling klein toestel*/
 
 @media only screen and (max-width: 767px){
+    main{
+        display: inline-block;
+    }
+    #booking-side{
+        top: 5rem;
+        height: 70%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
 
+    .fastbooker{
+        width: 100%;
+    }
+    .fastbooker .search-side h2{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .search-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stay{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .stay div{
+        margin: 0.3rem;
+        width: 90%;
+    }
+    .form-control{
+        width: 80%;
+        height: 3rem;
+        
+    }
+    
+    span.fa{
+        font-size: 2rem;
+        float: right;
+        font-size: 2.5rem;
+        margin-top: 0.3rem;
+    }
+
+    .fastbooker{
+        padding: 3rem;
+    }
+
+    
+    
 }
-
-
-

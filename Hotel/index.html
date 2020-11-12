@@ -1,84 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0xbGXXRv-kxO10DP5fcrSxaro3JkLNzk&callback=initMap&libraries=&v=weekly" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="image/logoZonderNaam/onlinelogomaker-103120-1757-7379-2000-transparent-vierkant.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
-    <link rel="stylesheet" type="text/css" href="CSS/main.css">
-    <script src="https://kit.fontawesome.com/19520a0eee.js" crossorigin="anonymous"></script>
-    <title>
-      Harmonie
-    </title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0xbGXXRv-kxO10DP5fcrSxaro3JkLNzk&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/logoZonderNaam/onlinelogomaker-103120-1757-7379-2000-transparent-vierkant.png"
+    type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+  <link rel="stylesheet" type="text/css" href="CSS/main.css">
+  <script src="https://kit.fontawesome.com/19520a0eee.js" crossorigin="anonymous"></script>
+  <title>
+    Harmonie
+  </title>
+</head>
+
 <body>
   <header>
-    <img src="image/Logo1/onlinelogomaker-103020-1740-5796.png" alt="logo" id="logoNavbarHead"> 
+    <img src="image/Logo1/onlinelogomaker-103020-1740-5796.png" alt="logo" id="logoNavbarHead">
     <ul class="navbar">
-      <li>Rooms</li>
-      <li>Spa</li>
-      <li>Restaurant</li>
-      <li>Location</li>
-      <li>Weather</li>
-      <li>Reserve</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Content/rooms.html">Rooms</a></li>
+      <li><a href="Content/spa.html">Spa</a></li>
+      <li><a href="Content/price.html">Price</a></li>
     </ul>
 
     <div class="menu-wrap">
       <input type="checkbox" class="toggler">
-      <div class="hamburger"><div></div></div>
+      <div class="hamburger">
+        <div></div>
+      </div>
       <div class="menu">
+        <div>
           <div>
-              <div>
-                  <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Rooms</a></li>
-                      <li><a href="#">Restaurant</a></li>
-                      <li><a href="#">Location</a></li>
-                      <li><a href="#">Weather</a></li>
-                      <li><a href="#">Book now</a></li>
-                  </ul>
-              </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+      <li><a href="Content/rooms.html">Rooms</a></li>
+      <li><a href="Content/spa.html">Spa</a></li>
+      <li><a href="Content/price.html">Price</a></li>
+            </ul>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
   </header>
+
   <main>
-  <div class="thumbnail">
+    <div class="thumbnail">
       <div class="buttons">
-      <button id="buttonBookRoom">Book Room</button>
-      <button id="buttonCheckWeather">Our Spa</button>
+        <button id="buttonBookRoom">Book Room</button>
+        <button id="buttonCheckWeather">Our Spa</button>
       </div>
-  </div>
-  <section class="displayGrid">
-    <div class="card">
-      <h2>Rooms</h2>
-      <img class="imgCard" src="image/foto's startpagina/room-luggage.jpg" alt="Test">
     </div>
-    <div class="card">
-      <h2>Spa</h2>
-      <img class="imgCard" src="image/foto's startpagina/spa-hotel-interior-pool.jpg" alt="Test">
-    </div>
-    <div class="card">
-      <h2>Restaurant</h2>
-      <img class="imgCard" src="image/foto's startpagina/interior-of-a-restaurant-modern-design.jpg" alt="Test">
-    </div>
-    <div class="card">
-      <h2>Location</h2>
-      <div id="map"></div>
-    </div>
-    <div class="card">
-      <h2>Weather</h2>
-      <img class="imgCard" src="image/foto's startpagina/realistic-weather-forecast.jpg" alt="Test">
-    </div>
-    <div class="card">
-      <h2>Book now</h2>
-      <img class="imgCard" src="image/foto's startpagina/month-lined-spring-desk-calendar.jpg" alt="Test">
-    </div>
-</section>
+    <section class="displayGrid">
+      <div class="card">
+        <h2>Rooms</h2>
+        <img class="imgCard" src="image/foto's startpagina/room-luggage.jpg" alt="">
+      </div>
+      <div class="card">
+        <h2>Spa</h2>
+        <img class="imgCard" src="image/foto's startpagina/spa-hotel-interior-pool.jpg" alt="">
+      </div>
+      <div class="card">
+        <h2>Restaurant</h2>
+        <img class="imgCard" src="image/foto's startpagina/interior-of-a-restaurant-modern-design.jpg" alt="">
+      </div>
+      <div class="card">
+        <h2>Location</h2>
+        <div id="map"></div>
+      </div>
+      <div class="card">
+        <h2>Weather</h2>
+        <img class="imgCard" src="image/foto's startpagina/realistic-weather-forecast.jpg" alt="">
+      </div>
+      <div class="card">
+        <h2>Book now</h2>
+        <img class="imgCard" src="image/foto's startpagina/month-lined-spring-desk-calendar.jpg" alt="">
+      </div>
+    </section>
   </main>
   <footer>
     <img src="image/logoForBlackBG/onlinelogomaker-103120-1628-0369.png" alt="logo beige" id="logoNavbarFoot">
@@ -88,11 +91,12 @@
       <i class="fab fa-instagram"></i>
     </div>
     <div id="companyDetails">
-    <span>welcome@harmonie.be </span>
-    <span>Stationstraat 1</span>
-    <span>Gent 9900 </span>
+      <span>welcome@harmonie.be </span>
+      <span>Stationstraat 1</span>
+      <span>Gent 9900 </span>
     </div>
   </footer>
-<script src="Javascript/main.js"></script>
+  <script src="Javascript/main.js"></script>
 </body>
+
 </html>

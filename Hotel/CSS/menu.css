@@ -7,6 +7,10 @@ header {
     
 }
 
+main{
+    background-image:"/image/foto's startpagina/hall-entrance-and-lounge-restaurant-with-stair.jpg";
+}
+
 header img{
     z-index: 2;
     
@@ -22,7 +26,17 @@ header img{
     
 } 
 
-.navbar li:hover{
+.navbar li a{
+    display: inline;
+    color: var(--primary-color-red);
+    align-self: center;
+    margin: auto;
+    padding: 2.5%;
+    box-sizing: border-box; 
+    text-decoration: none;
+} 
+
+.navbar li a:hover{
     cursor: pointer;
     transition: font-size 0.5s ease;
     border-bottom: 2px solid var(--primary-color-red);
@@ -72,7 +86,7 @@ footer div span{
     top: 0px;
     right: 0px;
     z-index: 1;
-    background-color: var(--primary-color-white);
+    background-color: var(--primary-color-white-transparent);
     overflow: visible;
 }
 
@@ -146,6 +160,7 @@ transform: rotate(90deg);
     list-style: none;
     font-size: 2rem;
     padding: 10px;
+    background-color: var(--primary-color-white-transparent);
 }
 
 .menu{
@@ -155,8 +170,15 @@ transform: rotate(90deg);
 
 .menu-wrap .menu > div > div > ul > li > a {
     text-decoration: none;
-    color: var(--primary-color-dark);
+    color: var(--primary-color-red);
+    width: 100%;
     
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+    cursor: pointer;
+    transition: font-size 0.5s ease;
+    border-bottom: 2px solid var(--primary-color-red);
 }
 
 .menu-wrap .menu{
@@ -203,12 +225,12 @@ transform: rotate(90deg);
         
     }
 
-    .navbar li{
-        font-size: 1.1em;
+    .navbar li a{
+        font-size: 1.5rem;
     } 
     
-    .navbar li:hover{
-        font-size: 1.3em;
+    .navbar li a:hover{
+        font-size: 1.8em;
     } 
     #logoNavbarHead{
         height: 90px;

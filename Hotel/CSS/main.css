@@ -1,9 +1,10 @@
 /*inspiratie thumbnail: https://www.thehotel-brussels.be/nl*/
 body{
-    background-image: url("../image/foto's startpagina/hall-entrance-and-lounge-restaurant-with-stair.jpg");
+    
     background-repeat: no-repeat;
     background-color:var(--primary-color-white);
 }
+
 
 h1{
     color: var(--primary-color-white);
@@ -38,8 +39,8 @@ span{
 
 #buttonCheckWeather{
     
-    background-color: var(--primary-color-white-transparent);
-    color: var(--primary-color-dark);
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
 }
 
 #buttonBookRoom:hover{
@@ -49,8 +50,8 @@ span{
 }
 
 #buttonCheckWeather:hover{
-    background-color: var(--primary-color-dark-transparent);
-    color: var(--primary-color-white);
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
     cursor: pointer;
 }
 
@@ -91,10 +92,21 @@ span{
      overflow: hidden;
  }
 
+ .displayGrid{
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+}
+
 /*template voor responsive*/
 /*styling groot toestel*/
 @media only screen and (min-width: 1025px){
     
+    main img{
+        display: block;
+        height: 50rem;
+        margin: auto;
+        margin-bottom: 2rem;     
+    }
+
     h1{
         font-size: 6em;
         padding-left: 100px;
@@ -108,19 +120,15 @@ span{
 
     .thumbnail{
         width: 80vw;
-        height: 35vw;
+        height: 10vw;
         margin: auto;
     }
 
     .buttons button{
-        width: 30vw;
-        height: 8vw;
+        width: 20rem;
+        height: 5rem;
         max-width: 300px;
         max-height: 80px;
-    }
-
-    .displayGrid{
-        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
     }
 
     .card{
@@ -137,6 +145,13 @@ span{
 /*styling middel toestel*/
 @media only screen and (max-width: 1024px) and (min-width: 768px){
     
+    main img{
+        display: block;
+        height: 30rem;
+        margin: auto;
+        margin-bottom: 2rem;        
+    }
+
     h1{
         font-size: 4em;
         padding-left: 100px;
@@ -150,7 +165,6 @@ span{
 
     .thumbnail{
         width: 80vw;
-        height: 50vw;
         margin: auto;
     }
 
@@ -159,10 +173,6 @@ span{
         height: 8vh;
         min-width: 100px;
         min-height: 30px;
-    }
-
-    .displayGrid{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .card{
@@ -177,6 +187,12 @@ span{
 
 @media only screen and (max-width: 767px){
     
+    main img{
+        display: block;
+        height: 20rem;
+        margin: auto;
+        margin-bottom: 1rem;        
+    }
 
     h1{
         font-size: 3em;
@@ -185,7 +201,7 @@ span{
     
     .thumbnail{
         width: 90vw;
-        height: 70vh;
+        height: 30rem;
         margin: auto;
     }
 
@@ -194,9 +210,6 @@ span{
         height: 8vw;
         min-width: 120px;
         min-height: 40px;
-    }
-    .displayGrid{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     .card{
         min-width: 250px;

@@ -1,0 +1,33 @@
+main{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: var(--primary-color-dark);
+}
+
+form input{
+    width: 100%;
+}
+
+form label{
+    display: block;
+}
+
+#roomType{
+    width: 100%;
+}
+
+#breakfast, #allInSpa{
+    width: auto;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+}
+
+.inline{
+    display: inline;
+}
+
+.widthBepalen{
+    width: 100%;
+}
