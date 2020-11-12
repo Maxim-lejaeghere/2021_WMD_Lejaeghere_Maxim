@@ -17,32 +17,41 @@
           let endBooked;
           let i;
           let j;
-          for (i = 0; i < rooms.length; i++) {
-            for (j = 0; j < rooms[i].bookedFrom.length; j++) {
-              beginBooked = new Date(rooms[i].bookedFrom[j]);
-              endBooked = new Date(rooms[i].bookedTo[j]);
-              if (beginBooked <= beginDateInput &&
-                 beginDateInput <= endBooked) {
-                break;
-              } else if (beginBooked <= endDateInput &&
+          const today = new Date();
+          if (beginDateInput < today) {
+            alert('The begin date can not be earlier then today');
+          } else {
+            if (beginDateInput > endDateInput) {
+              alert('The begin date can not be later then the end date');
+            } else {
+              for (i = 0; i < rooms.length; i++) {
+                for (j = 0; j < rooms[i].bookedFrom.length; j++) {
+                  beginBooked = new Date(rooms[i].bookedFrom[j]);
+                  endBooked = new Date(rooms[i].bookedTo[j]);
+                  if (beginBooked <= beginDateInput &&
+                beginDateInput <= endBooked) {
+                    break;
+                  } else if (beginBooked <= endDateInput &&
                 endDateInput <= endBooked) {
-                break;
-              } else if (beginDateInput <= beginBooked &&
-                 endDateInput >= endBooked) {
-                break;
-              } else {
-                roomType = rooms[i].typeRoom;
+                    break;
+                  } else if (beginDateInput <= beginBooked &&
+                endDateInput >= endBooked) {
+                    break;
+                  } else {
+                    roomType = rooms[i].typeRoom;
 
-                if (roomTypesAvailible.includes(roomType)) {
-                } else {
-                  roomTypesAvailible.push(roomType);
+                    if (roomTypesAvailible.includes(roomType)) {
+                    } else {
+                      roomTypesAvailible.push(roomType);
+                    }
+                    break;
+                  }
                 }
-                break;
               }
+              availibility();
+              roomTypesAvailible.length = 0;
             }
           }
-          availibility();
-          roomTypesAvailible.length = 0;
         })
         .catch((err) => {
         // doe iets met de error

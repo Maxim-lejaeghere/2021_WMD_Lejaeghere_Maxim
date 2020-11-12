@@ -35,6 +35,9 @@ footer{
     bottom:0;
 }
 
+.appTitle p{
+    font-size: 3rem;
+}
 
 /*template voor responsive*/
 /*styling groot toestel*/
