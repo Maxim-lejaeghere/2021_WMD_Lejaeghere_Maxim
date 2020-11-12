@@ -21,13 +21,12 @@ html{
 body{
     
     background-color: var(--primary-color-white);
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 
 main{min-height: 95vh;}
 header{
-    display: fixed;
     top: 0;
     margin-bottom: 15px;
 }
