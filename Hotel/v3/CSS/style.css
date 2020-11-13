@@ -1,0 +1,63 @@
+/*non-responsive styling*/
+/*algemeen*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color-dark: #08302F;
+    --primary-color-Green: #0E8044;
+    --primary-color-white:#b5E582;
+    --primary-color-red: #D48CF8;
+    --primary-color-red-transparent: rgba(212,140,248,0.8);
+    --primary-color-white-transparent: rgba(181,229,130,0.8);
+    --primary-color-dark-transparent: rgba(8,48,47,0.8);
+}
+
+body{
+    
+    background-color: var(--primary-color-white);
+    width: 100%;
+    min-height: 100vh;
+}
+
+main{
+    min-height: 100vh;
+}
+
+header{
+    top: 0;
+    margin-bottom: 15px;
+}
+
+footer{
+    bottom:0;
+}
+
+.appTitle p{
+    font-size: 3rem;
+}
+
+/*template voor responsive*/
+/*styling groot toestel*/
+@media only screen and (min-width: 1024px){
+    
+}
+
+/*styling middel toestel*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    
+}
+
+/*styling klein toestel*/
+
+@media only screen and (max-width: 768px){
+   
+}

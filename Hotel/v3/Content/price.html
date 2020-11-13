@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="../image/logoZonderNaam/onlinelogomaker-103120-1757-7379-2000-transparent-vierkant.png"
+    type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/price.css">
+  <script src="https://kit.fontawesome.com/19520a0eee.js" crossorigin="anonymous"></script>
+  <title>
+    Harmonie
+  </title>
+</head>
+
+<body>
+  <header>
+    <img src="../image/Logo1/onlinelogomaker-103020-1740-5796.png" alt="logo" id="logoNavbarHead">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+              <li><a href="Content/rooms.html">Rooms</a></li>
+              <li><a href="Content/spa.html">Spa</a></li>
+              <li><a href="Content/price.html">Price</a></li>
+              <li><a href="Content/feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Content/rooms.html">Rooms</a></li>
+              <li><a href="Content/spa.html">Spa</a></li>
+              <li><a href="Content/price.html">Price</a></li>
+              <li><a href="Content/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="titleBlock">
+      <h1>Price calculation</h1>
+      <p>Fill in all the detail to know your price</p>
+    </div>
+
+    <form class="dataPrice">
+      <label for="roomType">Room type</label>
+      <select name="Room Type" id="roomType">
+        <option value="juniorSuite">Junior Suite</option>
+        <option value="vitalRoom">Vital Room</option>
+        <option value="vitalityRoomDeluxe">Vitality Room Deluxe</option>
+      </select>
+      <label>Amount of persons</label>
+      <input type="number" id='amountOfPeople'>
+      <label>Amount of days</label>
+      <input type="number"id='amountOfDays'>
+      <label>Discount</label>
+      <input type="text">
+      <input type="checkbox" id="breakfast">
+      <label class="inline">Breakfast</label><br>
+      <input type="checkbox" id="allInSpa">
+      <label class="inline">All in Spa</label><br>
+      <button id="btnPrice">Calculate</button>
+    </form>
+    <div id="totalPrice">
+      <div class="fixedText">
+      <p id="validationRoomType"> You choise for: </p>
+      <p id="validationAmountOfPeople">Aantal personen: </p>
+      <p id="validationBreakfast">Breakfast: </p>
+      <p id="vaidationAllInSpa">All in Spa: </p>
+      <p id="validationTotalPrice">Total Price: </p>
+    </div>
+    <div class="outputText">
+      <p id="validationRoomTypeOutput">test</p>
+      <p id="validationAmountOfPeopleOutput">test</p>
+      <p id="validationBreakfastOutput">test</p>
+      <p id="vaidationAllInSpaOutput">test</p>
+      <p id="validationTotalPriceOutput">test</p>
+    </div>
+    </div>
+    <section class="displayGrid">
+      <div class="card">
+        <div class="appTitle">
+          <p>Today</p>
+        </div>
+        <div class="notification">
+
+        </div>
+        <div class="weather-container">
+          <div class="weatherIcon">
+            <img src="../image/icons/unknown.png" alt="">
+          </div>
+          <div class="temperatureValue">
+            <p>- °<span>C</span></p>
+          </div>
+          <div class="temperatureDiscription">
+            <p> - </p>
+          </div>
+        </div>
+          <div class="location">
+            <p> - </p>
+          </div>
+        </div>
+      
+      <div class="card">
+        <div class="map">
+          <iframe  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=nl&amp;q=60.4234958,%2022.0929899+(Mijn%20bedrijfsnaam)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.mapsdirections.info/nl/cirkel-straal-kaart/">Bereken de straal</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </main>
+  <footer>
+    <img src="../image/Logo1/onlinelogomaker-103120-1628-0369.png" alt="logo dark" id="logoNavbarFoot">
+    <div class="socialMedia">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div id="companyDetails">
+      <span>welcome@harmonie.be </span>
+      <span>54 Saarovägen</span>
+      <span>Turku, Varsinais-Suom</span>
+    </div>
+  </footer>
+  <script src="../Javascript/price.js"></script>
+</body>
+
+</html>

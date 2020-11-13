@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="../image/logoZonderNaam/onlinelogomaker-103120-1757-7379-2000-transparent-vierkant.png"
+    type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/rooms.css">
+  <script src="https://kit.fontawesome.com/19520a0eee.js" crossorigin="anonymous"></script>
+  <title>
+    Our rooms in Harmonie
+  </title>
+</head>
+
+<body>
+  <header>
+    <img src="../image/Logo1/onlinelogomaker-103020-1740-5796.png" alt="logo" id="logoNavbarHead">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Content/rooms.html">Rooms</a></li>
+      <li><a href="Content/spa.html">Spa</a></li>
+      <li><a href="Content/price.html">Price</a></li>
+      <li><a href="Content/feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Content/rooms.html">Rooms</a></li>
+              <li><a href="Content/spa.html">Spa</a></li>
+              <li><a href="Content/price.html">Price</a></li>
+              <li><a href="Content/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="flexbox">
+      <div id="booking-side">
+        <div class="fastbooker">
+          <section class="search-side">
+            <h2>Check available room</h2>
+            <div class="stay">
+              <div class="">
+                <h4>Arrival date:</h4>
+                <input type="date" class="form-control rangepicker start" id="beginDateInput">
+                <span class="fa fa-fw fa-calendar fa-lg"></span>
+              </div>
+              <div class="">
+                <h4>Departure date:</h4>
+                <input type="date" class="form-control rangepicker end" id="endDateInput">
+                <span class="fa fa-fw fa-calendar fa-lg"></span>
+              </div>
+              <button type="submit" id="btnAvailibility">SHOW AVAILABILITY</button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="overviewRooms">
+        <h1>Our Rooms</h1>
+        <div class="roomovervieuw">
+          <div class="roomTypes">
+            <h2>Vital Room</h2>
+            <div id="availableVital">
+              <i class="fas fa-check"></i>
+              <p>available</p>
+            </div>
+            <div id="notAvailableVital">
+              <i class="fas fa-times"></i>
+              <p>Sorry we are booked</p>
+            </div>
+            <div class="roomPictures">
+              <img src="../image/Rooms/vital-room01.jpg" alt="">
+              <img src="../image/Rooms/vital-room02.jpg" alt="">
+              <div>
+                <p class="typeRoom">Vital Room</p>
+                <p class="Price">From 200€</p>
+                <p class="Included">per person/night (incl. brunch)</p>
+                <button>Discount</button>
+              </div>
+            </div>
+            <div class="roomDescription">
+              <div class="roomInfo">
+                <h3>The Cozy Room</h3>
+                <p>For the short trip for two: our Vitality Rooms in the main house offer perfect feel-good ambience
+                  over 25 m². They are equipped with classic bath or modern shower bath.</p>
+              </div>
+            </div>
+            <div class="roomPrice">
+              <h3></h3>
+              <p></p>
+            </div>
+
+          </div>
+          <div class="roomovervieuw">
+            <div class="roomTypes">
+              <h2>Vitality Room Deluxe</h2>
+              <div id="availableDeluxe">
+                <i class="fas fa-check"></i>
+                <p>available</p>
+              </div>
+              <div id="notAvailableDeluxe">
+                <i class="fas fa-times"></i>
+                <p>Sorry we are booked</p>
+              </div>
+
+              <div class="roomPictures">
+                <img src="../image/Rooms/vitality-room.jpg" alt="">
+                <img src="../image/Rooms/vitality-room02.jpg" alt="">
+                <div>
+                  <p class="typeRoom">Vitality Room Deluxe</p>
+                  <p class="Price">From 150€</p>
+                  <p class="Included">per person/night (incl. brunch)</p>
+                  <button>Discount</button>
+                </div>
+              </div>
+              <div class="roomDescription">
+                <div class="roomInfo">
+                  <h3>The big Comfort Room</h3>
+                  <p>More space for your holiday program: our elegant Vitality Room Superior in the main house range
+                    between 25 m² (with balcony) and 30 m² (without balcony). They are equipped with a comfort shower
+                    bath.</p>
+                </div>
+              </div>
+              <div class="roomPrice">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="roomovervieuw">
+            <div class="roomTypes">
+              <h2>Junior Suite</h2>
+              <div id="availableJunior">
+                <i class="fas fa-check"></i>
+                <p>available</p>
+              </div>
+              <div id="notAvailableJunior">
+                <i class="fas fa-times"></i>
+                <p>Sorry we are booked</p>
+              </div>
+              <div class="roomPictures">
+                <img src="../image/Rooms/juniorsuite-01.jpg" alt="">
+                <img src="../image/Rooms/juniorsuite-02.jpg" alt="">
+                <div>
+                  <p class="typeRoom">Junior Suite</p>
+                  <p class="Price">From 100€</p>
+                  <p class="Included">per person/night (incl. brunch)</p>
+                  <button>Discount</button>
+                </div>
+              </div>
+              <div class="roomDescription">
+                <div class="roomInfo">
+                  <h3>Elegant living</h3>
+                  <p>For outstanding comfort: our Junior Suites (40 m² and larger) in the main house offer an open
+                    living room and bedroom with a balcony. They are equipped with a combined bath/shower-bath.</p>
+                </div>
+              </div>
+              <div class="roomPrice">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <img src="../image/Logo1/onlinelogomaker-103120-1628-0369.png" alt="logo dark" id="logoNavbarFoot">
+    <div class="socialMedia">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div id="companyDetails">
+      <span>welcome@harmonie.be </span>
+      <span>54 Saarovägen</span>
+      <span>Turku, Varsinais-Suom</span>
+    </div>
+  </footer>
+  <script src="../Javascript/rooms.js"></script>
+
+</body>
+
+</html>

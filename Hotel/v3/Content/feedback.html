@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/logoZonderNaam/onlinelogomaker-103120-1757-7379-2000-transparent-vierkant.png"
+    type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/feedback.css">
+  <script src="https://kit.fontawesome.com/19520a0eee.js" crossorigin="anonymous"></script>
+  <title>
+    Harmonie
+  </title>
+</head>
+
+<body>
+  <header>
+    <img src="../image/Logo1/onlinelogomaker-103020-1740-5796.png" alt="logo" id="logoNavbarHead">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Content/rooms.html">Rooms</a></li>
+      <li><a href="Content/spa.html">Spa</a></li>
+      <li><a href="Content/price.html">Price</a></li>
+      <li><a href="Content/feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Content/rooms.html">Rooms</a></li>
+              <li><a href="Content/spa.html">Spa</a></li>
+              <li><a href="Content/price.html">Price</a></li>
+              <li><a href="Content/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="inputSide">
+      <h1>Schrijf een beoordeling</h1>
+      <p>score</p>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="fas fa-star"></i>
+      <form>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="lname">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="name">Reaction:</label><br>
+        <textarea name="message" rows="10" cols="30"></textarea><br><br>
+        <p>Uw gegevens zullen enkel worden aangewend om u te contacteren in functie van de door u gevraagde
+          informatieverstreker
+          bescherming van uw gegevens is voor ons belangrijk. in onze privacy policy kunt u lezen hoe wij dit doen.
+        </p><br>
+        <input type="checkbox" id="Conditions" name="Conditions">
+        <label for="Conditions"> Akkoord</label><br><br>
+        <input type="submit" id= "btnSubmitComment" value="BEOORDELING PLAATSEN">
+
+      </form>
+    </div>
+    <div id="outputSide">
+      <div class="avarageRating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      <p id="amountReviews"> 200 REVIEWS</p>
+      </div>
+      <div class="comment">
+        <div class="headerComment">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img src="../image/Logo1/onlinelogomaker-103120-1628-0369.png" alt="logo dark" id="logoNavbarFoot">
+    <div class="socialMedia">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div id="companyDetails">
+      <span>welcome@harmonie.be </span>
+      <span>54 Saarovägen</span>
+      <span>Turku, Varsinais-Suom</span>
+    </div>
+  </footer>
+  <script src="../Javascript/feedback.js"></script>
+</body>
+
+</html>

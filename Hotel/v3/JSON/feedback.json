@@ -1,0 +1,96 @@
+{
+    "status": true,
+    "message": "fetch success",
+    "results": [
+    {
+    "email": "tony.penninckx@sport.vlaanderen",
+    "lang": 1,
+    "name": "tony penninckx",
+    "description": "mooie en ruime kamers, alles heel proper en netjes. uitstekende prijs/ kwaliteitverhouding",
+    "score": 9,
+    "approved": true,
+    "createdAt": "06-10-2020"
+    },
+    {
+    "email": "Thomas.Platte@Aldi-Nord.de",
+    "lang": 4,
+    "name": "Thomas Platte",
+    "description": "Tolles Hotel im Zentrum von Aalst. Das Zimmer war sauber, modern, ruhig und gem&#252;tlich. Trotz Corona-Pandemie gab es ein sehr gro&#223;es und schmackhaftes Fr&#252;hst&#252;ck. Ich komme gerne wieder.",
+    "score": 9,
+    "approved": true,
+    "createdAt": "02-10-2020"
+    },
+    {
+    "email": "rtutua.781364@guest.booking.com",
+    "lang": 1,
+    "name": "Reggy Tutuarima",
+    "description": "een vriendelijke ontvangst waarbij je goed wordt uitgelegd over alles wat nodig is om te weten.\r\nMooie schone kamer met een ruime badkamer.\r\nOntbijt was goed, lekker en in overvloed, bediend door hele lieve mensen.",
+    "score": 10,
+    "approved": true,
+    "createdAt": "29-09-2020"
+    },
+    {
+    "email": "rdebal.889294@guest.booking.com",
+    "lang": 1,
+    "name": "Ronny Debal",
+    "description": "Goed hotel; centraal gelegen; mooie, ruime en nette kamer met een bad en inloopdouche; rustig. Ontbijt wordt geserveerd aan tafel en is meer dan voldoende. Personeel is heel vriendelijk. Als minpunt willen wij toch toevoegen dat €10 voor een niet bewaakte parking toch wel te veel is.",
+    "score": 9,
+    "approved": true,
+    "createdAt": "22-09-2020"
+    },
+    {
+    "email": "andrekosten@gmail.com",
+    "lang": 1,
+    "name": "Andre Kosten",
+    "description": "Een heerlijk hotel,dicht bij het leuke centrum van Aalst.",
+    "score": 8,
+    "approved": true,
+    "createdAt": "21-09-2020"
+    },
+    {
+    "email": "skingma@lnprinting.nl",
+    "lang": 1,
+    "name": "Sven Kingma",
+    "description": "Super locatie, alles goed verzorgd door de gastheer",
+    "score": 10,
+    "approved": true,
+    "createdAt": "10-09-2020"
+    },
+    {
+    "email": "ldefra.664550@guest.booking.com",
+    "lang": 1,
+    "name": "LENA DEFRAINE",
+    "description": "Z&#233;&#233;r goed hotel ! Vriendelijk onthaal en vriendelijke bediening bij het ontbijt. Gemakkelijke parking. Zeer mooie, grote, propere kamer. Super lekker ontbijt, met de nodige Covid maatregelingen. Gemakkelijke ligging t.o.v. het centrum van Aalst. Een absolute aanrader!",
+    "score": 10,
+    "approved": true,
+    "createdAt": "08-09-2020"
+    },
+    {
+    "email": "nicolemarchand.nb@gmail.com",
+    "lang": 3,
+    "name": "Nicole Marchand",
+    "description": "We had an extended stay due to my partner being in hospital and I must congratulate your manager and staff for making our stay a wonderful experience. Their warm and welcoming personalities, clean and fresh accommodation and then all the wonderful extras which included a superb breakfast and all those personal touches which made it feel like home away from home. Thank you again to Tanguy and his team. ",
+    "score": 10,
+    "approved": true,
+    "createdAt": "02-09-2020"
+    },
+    {
+    "email": "patrick_papens@outlook.com",
+    "lang": 1,
+    "name": "Patrick Papens",
+    "description": "Top hotel, op wandelafstand van Grote Markt.\r\nRuime kamer en badkamer. Verzorgd ontbijt. \r\nAanrader!",
+    "score": 9,
+    "approved": true,
+    "createdAt": "20-07-2020"
+    },
+    {
+    "email": "jklein.932151@guest.booking.com",
+    "lang": 1,
+    "name": "Johan Klein",
+    "description": "Prima hotel met goed restaurant.\r\nVriendelijke medewerkers.",
+    "score": 9,
+    "approved": true,
+    "createdAt": "20-07-2020"
+    }
+    ]
+    }

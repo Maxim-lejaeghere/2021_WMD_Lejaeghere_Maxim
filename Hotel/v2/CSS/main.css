@@ -1,0 +1,239 @@
+/*inspiratie thumbnail: https://www.thehotel-brussels.be/nl*/
+body{
+    
+    background-repeat: no-repeat;
+    background-color:var(--primary-color-white);
+}
+
+
+h1{
+    color: var(--primary-color-white);
+    width: 100%;
+}
+
+span{
+    display: block;
+    width: 100%;
+}
+
+
+
+.buttons{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+}
+
+.buttons button{
+    
+    display: block;
+    margin: auto;
+}
+
+.buttonsDiv{
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    width: 80vw;
+    height: 10vw;
+    margin: auto;
+}
+
+#buttonBookRoom a{
+    text-decoration: none;
+    background-color: var(--primary-color-dark-transparent);
+    color: var(--primary-color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#buttonBookRoom{
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#buttonCheckWeather{
+    
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-white);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#buttonCheckWeather a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary-color-white);
+    cursor: pointer;
+    border: none;
+}
+
+#buttonBookRoom:hover {
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+    cursor: pointer;
+    border: solid 2px var(--primary-color-dark);
+}
+
+#buttonCheckWeather:hover{
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px var(--primary-color-dark);
+}
+
+#buttonBookRoom:hover a {
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+
+#buttonCheckWeather:hover a{
+    background-color: var(--primary-color-white-transparent);
+    color: var(--primary-color-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.card{
+    
+    text-align: center;
+    border-radius: 10px;
+    border: solid 10px var(--primary-color-dark);
+    color: var(--primary-color-dark);
+    margin: auto;
+    margin-bottom: 10px;
+ }
+ #slider{
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 3px;
+    
+}
+
+.mySlides {
+    margin: auto;
+    overflow: hidden;
+}
+
+ .card h2{
+    height: 5;
+    padding-bottom: 15px;
+    width: 100%;
+    padding-top: 10px;
+ }
+
+ 
+
+ .imgCard{
+    
+    height: 85%;
+    width: 100%;
+     overflow: hidden;
+ }
+
+ .displayGrid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*template voor responsive*/
+/*styling groot toestel*/
+@media only screen and (min-width: 1025px){
+    
+    #slider{
+        width: 80rem;
+        height: 45rem;
+    }
+    h1{
+        font-size: 6em;
+        padding-left: 100px;
+    }
+
+    span{
+        font-size: 3em;
+        padding-left: 50px;
+    }
+    
+
+    
+
+    .buttons button{
+        width: 20rem;
+        height: 5rem;
+    }
+
+    .card{
+        width: 40rem;
+    }
+
+    
+    
+}
+
+/*styling middel toestel*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    
+    
+    #slider{
+        width: 70rem;
+        height: 40rem;
+    }
+
+    h1{
+        font-size: 4em;
+        padding-left: 100px;
+    }
+
+    .card{
+        width: 35rem;
+    }
+
+    .buttons button{
+        width: 20rem;
+        height: 5rem;
+    }
+}
+
+/*styling klein toestel*/
+
+@media only screen and (max-width: 767px){
+    
+    #slider{
+        width: 30rem;
+        height: 20rem;  
+    }
+
+    h1{
+        font-size: 3em;
+        padding-left: 15%;
+    }
+
+    .card {
+        width: 30rem;
+    }
+    
+    
+
+    .buttons button{
+        width: 10rem;
+        height: 4rem;
+    }
+
+
+}
+
+
+
